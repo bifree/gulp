@@ -1,21 +1,21 @@
 fieldset,
 legend,
 button {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 	background: none;
 	border: none;
 	border-radius: 0;
 	margin: 0;
 	outline: none;
 	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
-input[type="date"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="time"] {
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=time] {
 	border: 1px solid #ccc;
 	font-size: 16px;
 	margin: 0;
@@ -23,20 +23,17 @@ input[type="time"] {
 	padding: 4px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="url"],
-input[type="search"],
-input[type="number"],
-input[type="datetime"],
-input[type="week"],
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=number],
+input[type=datetime],
+input[type=week],
 textarea,
 select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 	background: none;
 	border: 1px solid #ccc;
 	border-radius: 0;
@@ -45,6 +42,9 @@ select {
 	margin-right: 0;
 	outline: none;
 	padding: 4px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 textarea {
@@ -93,13 +93,13 @@ select {
 
 /* radio & checkbox */
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type=radio],
+input[type=checkbox] {
 	display: none;
 }
 
-input[type="radio"] + span,
-input[type="checkbox"] + span {
+input[type=radio] + span,
+input[type=checkbox] + span {
 	color: #555;
 	cursor: pointer;
 	display: inline-block;
@@ -111,8 +111,8 @@ input[type="checkbox"] + span {
 	text-align: center;
 }
 
-input[type="radio"] + span::before,
-input[type="checkbox"] + span::before {
+input[type=radio] + span::before,
+input[type=checkbox] + span::before {
 	background: #fff;
 	border: 1px solid #ccc;
 	content: "";
@@ -137,23 +137,23 @@ legend {
 
 /* button */
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+input[type=submit],
+input[type=reset],
+input[type=button],
 button {
+	border: 1px solid #999;
+	border-radius: 0;
+	display: inline-block;
+	margin: 0;
+	padding: 10px 30px;
 	-webkit-box-sizing: content-box;
 	-webkit-appearance: button;
 	-moz-appearance: button;
 	appearance: button;
 	background: #efefef;
-	border: 1px solid #999;
-	border-radius: 0;
 	color: #000;
 	cursor: pointer;
-	display: inline-block;
 	font-size: 20px;
-	margin: 0;
-	padding: 10px 30px;
 }
 
 /* ブラウザ対策
@@ -171,10 +171,10 @@ select::-ms-expand {
 
 /* iOS */
 
-input[type="submit"]::-webkit-search-decoration,
+input[type=submit]::-webkit-search-decoration,
 input[type=reset]::-webkit-search-decoration,
-input[type="button"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-decoration {
+input[type=button]::-webkit-search-decoration,
+input[type=search]::-webkit-search-decoration {
 	display: none;
 }
 
@@ -182,19 +182,19 @@ input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-decoration {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
 	-moz-appearance: none;
 	-webkit-appearance: textfield;
 	-webkit-box-sizing: border-box;
 	-webkit-appearance: none;
 	appearance: none;
 	background: none;
-	border: 0;
-	border-radius: 0;
 	font-size: 16px;
-	margin: 0;
 	outline: none;
-	padding: 0;
 }
 
 /* 挙動
@@ -208,18 +208,18 @@ select:hover {
 	border-color: #666;
 }
 
-input[type="radio"] + span:hover,
-input[type="checkbox"] + span:hover {
+input[type=radio] + span:hover,
+input[type=checkbox] + span:hover {
 	color: #000;
 }
 
-input[type="radio"] + span:hover::before,
-input[type="checkbox"] + span:hover::before {
+input[type=radio] + span:hover::before,
+input[type=checkbox] + span:hover::before {
 	border-color: #000;
 }
 
-input[type="radio"] + span:hover::after,
-input[type="checkbox"] + span:hover::after {
+input[type=radio] + span:hover::after,
+input[type=checkbox] + span:hover::after {
 	background: #ccc;
 	content: "";
 	height: 8px;
@@ -232,18 +232,18 @@ input[type="checkbox"] + span:hover::after {
 
 /* checked */
 
-input[type="radio"]:checked + span,
-input[type="checkbox"]:checked + span {
+input[type=radio]:checked + span,
+input[type=checkbox]:checked + span {
 	color: #3498db;
 }
 
-input[type="radio"]:checked + span::before,
-input[type="checkbox"]:checked + span::before {
+input[type=radio]:checked + span::before,
+input[type=checkbox]:checked + span::before {
 	border-color: #3498db;
 }
 
-input[type="radio"]:checked + span::after,
-input[type="checkbox"]:checked + span::after {
+input[type=radio]:checked + span::after,
+input[type=checkbox]:checked + span::after {
 	background: #3498db;
 	content: "";
 	height: 8px;
@@ -256,17 +256,17 @@ input[type="checkbox"]:checked + span::after {
 
 /* radio */
 
-input[type="radio"] + span::before,
-input[type="radio"] + span:hover::after,
-input[type="radio"]:checked + span::after {
+input[type=radio] + span::before,
+input[type=radio] + span:hover::after,
+input[type=radio]:checked + span::after {
 	border-radius: 50%;
 }
 
 /* button */
 
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
 button:hover {
 	background: #3498db;
 	border-color: #3498db;
@@ -280,10 +280,10 @@ textarea:focus {
 	border-color: #3498db;
 }
 
-input[type="submit"]:focus,
+input[type=submit]:focus,
 input[type=reset]:focus,
-input[type="button"]:focus,
-input[type="search"]:focus {
+input[type=button]:focus,
+input[type=search]:focus {
 	outline-offset: -2px;
 }
 
@@ -298,14 +298,14 @@ textarea:disabled:hover {
 	cursor: not-allowed;
 }
 
-input[type="radio"]:disabled + span,
-input[type="checkbox"]:disabled + span {
+input[type=radio]:disabled + span,
+input[type=checkbox]:disabled + span {
 	color: #ccc;
 	cursor: not-allowed;
 }
 
-input[type="radio"]:disabled + span::before,
-input[type="checkbox"]:disabled + span::before {
+input[type=radio]:disabled + span::before,
+input[type=checkbox]:disabled + span::before {
 	border-color: #ccc;
 	cursor: not-allowed;
 }
@@ -320,7 +320,7 @@ input[type="checkbox"]:disabled + span::before {
 
 body {
 	color: #333;
-	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3","游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic","メイリオ", "Meiryo", "verdana", sans-serif;
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", "verdana", sans-serif;
 	font-size: 16px;
 	line-height: 2;
 	min-width: 1140px;
@@ -381,13 +381,13 @@ img {
 .sec-title,
 .pc-menu,
 .sp-menu {
-	font-family: "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝","YuMincho","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝", 'Noto Serif JP', serif;
+	font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", "YuMincho", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "Noto Serif JP", serif;
 }
 
 .sec-title:before {
 	background: red;
 	bottom: 0px;
-	content: '';
+	content: "";
 	height: 3px;
 	left: calc(50% - 200px);
 	opacity: 0.8;
@@ -436,128 +436,5 @@ header {
 	right: 0;
 	top: 0%;
 	z-index: 6;
-}
-
-.l-header .header-top {
-	align-items: center;
-	display: flex;
-	height: 65px;
-	justify-content: space-between;
-	margin: 0 auto;
-	padding: 0 10px;
-	width: 1140px;
-}
-
-.l-header .header-top .header-top__left .left__logo img {
-	height: 48px;
-}
-
-.l-header .header-top .header-top__right {
-	display: flex;
-}
-
-.l-header .header-top .header-top__right .right__tel {
-	line-height: 23px;
-	margin-right: 50px;
-}
-
-.l-header .header-top .header-top__right .right__tel .right__tel__btn {
-	display: flex;
-}
-
-.l-header .header-top .header-top__right .right__tel .right__tel__btn .fa-phone-square-alt {
-	color: #36A3D5;
-	font-size: 50px;
-	margin-right: 10px;
-}
-
-.l-header .header-top .header-top__right .right__tel .right__tel__btn .right__tel__time {
-	color: #333;
-	font-size: 12px;
-	font-weight: bold;
-}
-
-.l-header .header-top .header-top__right .right__tel .right__tel__btn .right__tel__number {
-	color: #36A3D5;
-	font-size: 25px;
-	font-weight: bold;
-}
-
-.l-header .header-top .header-top__right .right__mail__btn {
-	background: orange;
-	border-radius: 4px;
-	box-shadow: 2px 2px rgba(195, 195, 195, 0.2);
-	color: #fff;
-	display: inline-block;
-	font-size: 16px;
-	font-weight: bold;
-	margin-top: 3px;
-	padding: 7px 15px;
-}
-
-.l-header .pc-menu {
-	align-items: center;
-	height: 30px;
-	margin: 0 auto;
-	width: 1140px;
-}
-
-.l-header .pc-menu .pc-menu__list {
-	display: flex;
-}
-
-.l-header .pc-menu .pc-menu__list .pc-menu__list__item {
-	border-left: solid 1px #c3c3c3;
-	display: inline-block;
-	font-size: 14px;
-	text-align: center;
-	width: calc(100% / 7);
-}
-
-.l-header .pc-menu .pc-menu__list .pc-menu__list__item a {
-	color: #3D71B8;
-}
-
-.l-header .pc-menu .pc-menu__list .pc-menu__list__item:last-child {
-	border-right: solid 1px #c3c3c3;
-}
-
-.l-header .sp-menu,
-.l-header .sp-menu-btn {
-	display: none;
-}
-
-.lp-top .lp-top__cp {
-	margin-top: 95px;
-	width: 100%;
-}
-
-.lp-top .lp-top__sp {
-	display: none;
-}
-
-@media screen and (max-width: 599px) {
-
-.l-header .header-top {
-	box-shadow: 0px 1px rgba(195, 195, 195, 0.2);
-	height: 60px;
-	padding: 10px;
-	width: 100%;
-}
-
-.l-header .header-top .header-top__right {
-	display: none;
-}
-
-.lp-top .lp-top__cp {
-	display: none;
-}
-
-.lp-top .lp-top__sp {
-	display: block;
-	margin-top: 60px;
-	width: 100%;
-}
-
 }
 
